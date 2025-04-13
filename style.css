@@ -1,10 +1,21 @@
 body{
     font-family: "segoe ui", Tahoma, Geneva, sans-serif;
-    background-color: #fff8f2;
-    color: #4b2e2e;
+    background-image: url("PAGE-BACKROUND.jpg");
+    background-size: cover;
+    background-position: center;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+}
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: -1;
 }
 html{
     scroll-behavior: smooth;
@@ -14,30 +25,47 @@ h1,h2{
     text-align: center;
     font-weight: bold;
 }
-h1{
-    font-size: 3rem;
-    margin: 30px ;
+h1 {
+    font-size: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif;
+    animation: fadeIn 2s ease-in-out;
+    font-weight: 800;
 }
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 h2{
     font-size: 2rem;
     margin: 20px ;
 }
-.navbar{
+body.navbar{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     gap: 20px;
     padding: 20px;
-    background-color: #f3dfc1;
     position: sticky;
     top: 0;
     z-index: 999;
 }
 .nav-link{
     color: #5c2c0d;
-    font-weight: 500; 
-    text-decoration: none;  
+    font-size: 1.2rem;
+    font-weight: 800; 
+    text-decoration: none; 
+
 }
 section{
     padding: 40px 20px;
@@ -142,7 +170,7 @@ footer a{
     color: #ece5e0;
 }
 footer a:hover{
-    color: #a0522d;
+    color: #FED8B1;
 }
 .footer-img {
     width: 100%;
