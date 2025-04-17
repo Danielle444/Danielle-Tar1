@@ -30,7 +30,6 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     font-family: 'Arial', sans-serif;
-    animation: fadeIn 2s ease-in-out;
     font-weight: 800;
 }
 
@@ -116,6 +115,10 @@ section{
 #facts{
     background-color: #d5c3af;
 }
+#gallery p{
+    text-align: center;
+    font-weight: bold;
+}
 .card{
     width: 320px;
     height: 200px;
@@ -138,9 +141,6 @@ section{
     margin: 0;
     font-size: 0.8rem;
     text-align: center;
-    overflow: hidden;
-    font-weight: bold;
-    
 }
 a{
     text-decoration: none;
